@@ -10,7 +10,7 @@ def split2words(hinsi,text):
     words=''
     for token in t.tokenize(text):
         features =  token.part_of_speech.split(',')
-        if features[0] == hinsi:
+        if features[0] == hinshi:
             words+=token.surface+','
     return words
             
