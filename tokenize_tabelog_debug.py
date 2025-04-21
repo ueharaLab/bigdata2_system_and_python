@@ -18,7 +18,7 @@ def split2words(hinsi,text):
 tabelog_df = pd.read_csv('tabelog.csv', encoding='ms932', sep=',',skiprows=0)    
 
 kuchikomi2words=[]
-for kuchikomi in tabelog_df['text']:
+for kuchikomi in tabelog_df('text'):
 
     words = split2words('名詞',kuchikomi)
     print(words)
